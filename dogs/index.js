@@ -4,10 +4,13 @@ import express from 'express';
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-const dummyData = [{ breed: "British Shorthair", image_url: "https://cats.com/wp-content/uploads/2020/10/british-shorthair-compressed-540x360.jpg" },
-{ breed: "Persian", image_url: "https://cats.com/wp-content/uploads/2020/10/white-Persian-540x360.jpg" },
-{ breed: "Russian Blue", image_url: "https://cats.com/wp-content/uploads/2020/10/Russian-blue-cat-2-540x360.jpg" },
-{ breed: "Ussuri", image_url: "https://cats.com/wp-content/uploads/2016/09/Ussuri-1.jpg" }];
+const dummyData = [
+    {breed: "French Bulldog", image_url: "https://www.dogbreedslist.info/uploads/dog-pictures/french-bulldog-1.jpg"},
+    {breed: "Labdrador Retriever", image_url: "https://www.dogbreedslist.info/uploads/dog-pictures/labrador-retriever-1.jpg"},
+    {breed: "Poodle", image_url: "https://www.dogbreedslist.info/uploads/dog-pictures/poodle-1.jpg"},
+    {breed: "Rottweiler", image_url: "https://www.dogbreedslist.info/uploads/dog-pictures/rottweiler-1.jpg"},
+    {breed: "Miniature Schnauzer", image_url: "https://www.dogbreedslist.info/uploads/dog-pictures/miniature-schnauzer-1.jpg"}
+    ];
 
 
 app.get('/', (req, res) => {
